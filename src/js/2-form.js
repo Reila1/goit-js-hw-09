@@ -1,7 +1,6 @@
 const form = document.querySelector(".feedback-form");
 const STORAGE_KEY = "feedback-form-state";
 
-// Загружаем сохранённые данные, если есть
 const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
 form.elements.email.value = savedData.email || "";
 form.elements.message.value = savedData.message || "";
